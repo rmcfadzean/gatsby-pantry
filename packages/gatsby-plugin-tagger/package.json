@@ -27,5 +27,13 @@
     "watch": "babel -w src --out-dir .",
     "prepare": "cross-env NODE_ENV=production npm run build"
   },
+  "bugs": {
+    "url": "https://github.com/rmcfadzean/gatsby-pantry/issues"
+  },
+  "homepage": "https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-tagger#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-tagger"
+  },
   "gitHead": "ed69bf6281f19f9b560cae4293de532d28d92dfc"
 }
