@@ -20,6 +20,7 @@
 ## What is this?
 
 * [gatsby-plugin-tags](/packages/gatsby-plugin-tags/)
+* [gatsby-plugin-categories](/packages/gatsby-plugin-tags/)
 
 ## Contributing
 

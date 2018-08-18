@@ -1,0 +1,39 @@
+{
+  "name": "gatsby-plugin-categories",
+  "description": "Gatsby plugin to automatically create index pages for tagged content",
+  "version": "1.0.4",
+  "author": "Rob Mcfadzean <rob@northxsouth.co>",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "tags"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "/*.js"
+  ],
+  "peerDependencies": {
+    "gatsby": ">2.0.0-beta"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "cross-env": "^5.2.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "watch": "babel -w src --out-dir .",
+    "prepare": "cross-env NODE_ENV=production npm run build"
+  },
+  "bugs": {
+    "url": "https://github.com/rmcfadzean/gatsby-pantry/issues"
+  },
+  "homepage": "https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories"
+  },
+  "gitHead": "ed69bf6281f19f9b560cae4293de532d28d92dfc"
+}
