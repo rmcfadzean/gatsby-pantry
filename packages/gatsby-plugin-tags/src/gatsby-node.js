@@ -28,13 +28,13 @@ export const createPages = async (
 
   if (!templatePath) {
     reporter.panic(`
-      "templatePath" is a required option for gatsby-plugin-tagger
+      "templatePath" is a required option for gatsby-plugin-tags
     `);
   }
 
   if (!fs.existsSync(templatePath)) {
     reporter.panic(`
-      The template path passed to gatsby-plugin-tagger does not exist
+      The template path passed to gatsby-plugin-tags does not exist
       ${templatePath}
     `);
   }

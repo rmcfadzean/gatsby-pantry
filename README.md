@@ -19,7 +19,7 @@
 
 ## What is this?
 
-* [gatsby-plugin-tagger](/packages/gatsby-plugin-tagger/)
+* [gatsby-plugin-tags](/packages/gatsby-plugin-tags/)
 
 ## Contributing
 

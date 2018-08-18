@@ -1,10 +1,10 @@
-# gatsby-plugin-tagger
+# gatsby-plugin-tags
 
 Gatsby plugin to automatically create index pages for tagged content
 
 ## Install
 
-`npm install --save gatsby-plugin-tagger`
+`npm install --save gatsby-plugin-tags`
 
 ## How to use
 
@@ -21,7 +21,7 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-plugin-tagger",
+      resolve: "gatsby-plugin-tags",
       options: {
         templatePath: path.join(__dirname, '/src/templates/tag.js')
       }
