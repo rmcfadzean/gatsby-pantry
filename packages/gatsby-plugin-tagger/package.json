@@ -1,0 +1,30 @@
+{
+  "name": "gatsby-plugin-tagger",
+  "description": "Gatsby plugin to automatically create index pages for tagged content",
+  "version": "1.0.0",
+  "author": "Rob Mcfadzean <rob@northxsouth.co>",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "tags"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "/*.js"
+  ],
+  "peerDependencies": {
+    "gatsby": ">2.0.0-beta"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "cross-env": "^5.2.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "watch": "babel -w src --out-dir .",
+    "prepare": "cross-env NODE_ENV=production npm run build"
+  }
+}
