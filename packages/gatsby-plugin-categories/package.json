@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-categories",
   "description": "Gatsby plugin to automatically create index pages for categories of content",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Rob Mcfadzean <rob@northxsouth.co>",
   "keywords": [
     "gatsby",
