@@ -1,5 +1,6 @@
 import fs from "fs";
 import URL from "url";
+import { kebabCase } from "lodash";
 
 // eslint-disable-next-line import/prefer-default-export
 export const createPages = async (
@@ -50,7 +51,7 @@ export const createPages = async (
 
   Array.from(tagSet)[0].forEach(tag => {
     createPage({
-      path: URL.resolve(baseUrl, tag),
+      path: URL.resolve(baseUrl, kebabCase(tag)),
       component: templatePath,
       context: {
         tag
