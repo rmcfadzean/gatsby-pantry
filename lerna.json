@@ -1,6 +1,17 @@
 {
+  "command": {
+    "publish": {
+      "allowBranch": "master",
+      "conventionalCommits": true,
+      "message": "chore(release): Publish"
+    }
+  },
   "packages": [
     "packages/*"
+  ],
+  "ignoreChanges": [
+    "**/__tests__/**",
+    "**/*.md"
   ],
   "version": "1.0.2"
 }
