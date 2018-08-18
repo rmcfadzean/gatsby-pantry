@@ -26,5 +26,6 @@
     "build": "babel src --out-dir .",
     "watch": "babel -w src --out-dir .",
     "prepare": "cross-env NODE_ENV=production npm run build"
-  }
+  },
+  "gitHead": "ed69bf6281f19f9b560cae4293de532d28d92dfc"
 }
