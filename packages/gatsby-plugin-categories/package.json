@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-categories",
-  "description": "Gatsby plugin to automatically create index pages for tagged content",
-  "version": "1.0.4",
+  "description": "Gatsby plugin to automatically create index pages for categories of content",
+  "version": "1.0.3",
   "author": "Rob Mcfadzean <rob@northxsouth.co>",
   "keywords": [
     "gatsby",
@@ -34,6 +34,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories"
-  },
-  "gitHead": "ed69bf6281f19f9b560cae4293de532d28d92dfc"
+  }
 }
