@@ -10,11 +10,11 @@
       src="https://img.shields.io/badge/license-MIT-blue.svg"
       alt="Released under the MIT license."
     />
-    <img
-      src="https://img.shields.io/badge/ready%3F-almost-green.svg"
-      alt="Awesome? Almost!"
-    />
   </a>
+  <img
+    src="https://img.shields.io/badge/ready%3F-almost-green.svg"
+    alt="Awesome? Almost!"
+  />
 </div>
 
 ## What is this?
