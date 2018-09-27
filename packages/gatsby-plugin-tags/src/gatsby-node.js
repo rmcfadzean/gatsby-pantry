@@ -45,11 +45,11 @@ export const createPages = async (
 
   posts.forEach(({ node: { frontmatter: { tags } } }) => {
     if (tags) {
-      tagSet.add(tags);
+      tags.forEach(tag => tagSet.add(tag));
     }
   });
 
-  Array.from(tagSet)[0].forEach(tag => {
+  tagSet.forEach(tag => {
     createPage({
       path: URL.resolve(baseUrl, kebabCase(tag)),
       component: templatePath,
