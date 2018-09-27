@@ -49,7 +49,7 @@ export const createPages = async (
     }
   });
 
-  Array.from(categorySet).forEach(category => {
+  categorySet.forEach(category => {
     createPage({
       path: URL.resolve(baseUrl, kebabCase(category)),
       component: templatePath,
