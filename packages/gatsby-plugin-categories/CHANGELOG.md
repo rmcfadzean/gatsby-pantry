@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories/compare/v1.1.1...v1.1.2) (2018-09-27)
+
+
+### Bug Fixes
+
+* **gatsby-plugin-categories:** removed pointless set to array conversion ([71d2c9b](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories/commit/71d2c9b))
+
+
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories/compare/v1.1.0...v1.1.1) (2018-08-18)
 
