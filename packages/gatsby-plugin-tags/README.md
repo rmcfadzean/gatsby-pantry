@@ -4,7 +4,7 @@ Gatsby plugin to automatically create index pages for tagged content
 
 ## Install
 
-`npm install --save gatsby-plugin-tags`
+`yarn add gatsby-plugin-tags`
 
 ## How to use
 
@@ -17,17 +17,17 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
-        path: path.join(__dirname, 'posts')
+        path: path.join(__dirname, "posts")
       }
     },
     {
       resolve: "gatsby-plugin-tags",
       options: {
-        templatePath: path.join(__dirname, '/src/templates/tag.js')
+        templatePath: path.join(__dirname, "/src/templates/tag.js")
       }
     }
-  ],
-}
+  ]
+};
 ```
 
 ```javascript
@@ -78,5 +78,4 @@ export const pageQuery = graphql`
     }
   }
 `;
-
 ```
