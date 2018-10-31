@@ -1,31 +1,21 @@
 import fs from "fs";
 import URL from "url";
 import { kebabCase } from "lodash";
+import defaultOptions from "./defaults";
 
 // eslint-disable-next-line import/prefer-default-export
 export const createPages = async (
   { graphql, actions, reporter },
-  { templatePath, baseUrl }
+  pluginOptions
 ) => {
   const { createPage } = actions;
+  const { templatePath, prefix, query, transformer } = {
+    ...defaultOptions,
+    ...pluginOptions
+  };
 
-  const {
-    data: {
-      allMarkdownRemark: { edges: posts }
-    }
-  } = await graphql(`
-    {
-      allMarkdownRemark {
-        edges {
-          node {
-            frontmatter {
-              category
-            }
-          }
-        }
-      }
-    }
-  `);
+  const data = await graphql(query);
+  const posts = transformer(data);
 
   if (!templatePath) {
     reporter.panic(`
@@ -41,9 +31,8 @@ export const createPages = async (
   }
 
   const categorySet = new Set();
-  baseUrl = baseUrl || "/category/";
 
-  posts.forEach(({ node: { frontmatter: { category } } }) => {
+  posts.forEach(({ frontmatter: { category } }) => {
     if (category) {
       categorySet.add(category);
     }
@@ -51,7 +40,7 @@ export const createPages = async (
 
   categorySet.forEach(category => {
     createPage({
-      path: URL.resolve(baseUrl, kebabCase(category)),
+      path: URL.resolve(prefix, kebabCase(category)),
       component: templatePath,
       context: {
         category
