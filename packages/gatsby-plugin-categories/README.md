@@ -79,3 +79,7 @@ export const pageQuery = graphql`
   }
 `;
 ```
+
+### Options
+
+You can view the defaults in [`defaults.js`](https://github.com/r,cfadzean/gatsby-pantry/blob/master/packages/gatsby-plugin-categories/src/defaults.js)
