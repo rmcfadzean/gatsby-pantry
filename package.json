@@ -2,14 +2,14 @@
   "private": true,
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
+    "eslint": "^5.12.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-prettier": "^3.4.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "lerna": "^3.1.1",
-    "plop": "^2.1.0",
-    "prettier": "^1.14.2"
+    "eslint-plugin-prettier": "^3.0.1",
+    "lerna": "^3.10.5",
+    "plop": "^2.2.0",
+    "prettier": "^1.15.3"
   },
   "scripts": {
     "publish": "lerna publish",
