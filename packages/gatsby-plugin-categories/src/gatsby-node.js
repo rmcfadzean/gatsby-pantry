@@ -1,6 +1,6 @@
 import fs from "fs";
 import URL from "url";
-import { kebabCase } from "lodash";
+import { kebabCase, lowerCase } from "lodash";
 import defaultOptions from "./defaults";
 
 // eslint-disable-next-line import/prefer-default-export
@@ -34,7 +34,7 @@ export const createPages = async (
 
   posts.forEach(({ frontmatter: { category } }) => {
     if (category) {
-      categorySet.add(category);
+      categorySet.add(lowerCase(category));
     }
   });
 
