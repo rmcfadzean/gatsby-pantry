@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories/compare/v1.2.0...v2.0.0) (2019-01-19)
+
+
+### Features
+
+* more robust slugging and using fields instead of frontmatter ([3468aae](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories/commit/3468aae))
+
+
+
+
+
 # [1.2.0](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories/compare/v1.1.2...v1.2.0) (2018-10-31)
 
 **Note:** Version bump only for package gatsby-plugin-categories
