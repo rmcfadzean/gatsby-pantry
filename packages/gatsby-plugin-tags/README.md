@@ -58,13 +58,14 @@ export const pageQuery = graphql`
   query TagPage($tag: String) {
     allMarkdownRemark(
       limit: 1000
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { fields: { tags: { in: [$tag] } } }
     ) {
       totalCount
       edges {
         node {
           fields {
             slug
+            tags
           }
           excerpt
           timeToRead
@@ -82,4 +83,4 @@ export const pageQuery = graphql`
 
 ### Options
 
-You can view the defaults in [`defaults.js`](https://github.com/r,cfadzean/gatsby-pantry/blob/master/packages/gatsby-plugin-tags/src/defaults.js)
+You can view the defaults in [`defaults.js`](https://github.com/rmcfadzean/gatsby-pantry/blob/master/packages/gatsby-plugin-tags/src/defaults.js)

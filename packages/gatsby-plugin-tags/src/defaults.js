@@ -4,7 +4,7 @@ export default {
       allMarkdownRemark {
         edges {
           node {
-            frontmatter {
+            fields {
               tags
             }
           }
@@ -14,5 +14,8 @@ export default {
   `,
   prefix: "/tags/",
   transformer: ({ data }) =>
-    data.allMarkdownRemark.edges.map(({ node }) => node)
+    data.allMarkdownRemark.edges.map(({ node }) => node),
+  slugOptions: {
+    lower: true
+  }
 };

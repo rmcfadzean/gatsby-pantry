@@ -1,9 +1,27 @@
 import fs from "fs";
-import URL from "url";
-import { kebabCase } from "lodash";
-import defaultOptions from "./defaults";
+import slugify from "slug";
 
-// eslint-disable-next-line import/prefer-default-export
+import defaultOptions from "./defaults";
+import { pathify } from "./internals";
+
+export const onCreateNode = ({ node, actions }, pluginOptions) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === `MarkdownRemark`) {
+    const { slugOptions } = {
+      ...defaultOptions,
+      ...pluginOptions
+    };
+    const {
+      frontmatter: { tags }
+    } = node;
+
+    createNodeField({
+      node,
+      name: "tags",
+      value: tags.map(tag => slugify(tag, { ...slugOptions }))
+    });
+  }
+};
 export const createPages = async (
   { graphql, actions, reporter },
   pluginOptions
@@ -15,7 +33,7 @@ export const createPages = async (
   };
 
   const data = await graphql(query);
-  const posts = transformer(data);
+  const pages = transformer(data);
 
   if (!templatePath) {
     reporter.panic(`
@@ -32,7 +50,7 @@ export const createPages = async (
 
   const tagSet = new Set();
 
-  posts.forEach(({ frontmatter: { tags } }) => {
+  pages.forEach(({ fields: { tags } }) => {
     if (tags) {
       tags.forEach(tag => tagSet.add(tag));
     }
@@ -40,7 +58,7 @@ export const createPages = async (
 
   tagSet.forEach(tag => {
     createPage({
-      path: URL.resolve(prefix, kebabCase(tag)),
+      path: pathify(prefix, tag),
       component: templatePath,
       context: {
         tag

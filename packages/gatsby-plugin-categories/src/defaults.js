@@ -3,7 +3,7 @@ export default {
     allMarkdownRemark {
       edges {
         node {
-          frontmatter {
+          fields {
             category
           }
         }
@@ -12,5 +12,8 @@ export default {
   }`,
   prefix: "/category/",
   transformer: ({ data }) =>
-    data.allMarkdownRemark.edges.map(({ node }) => node)
+    data.allMarkdownRemark.edges.map(({ node }) => node),
+  slugOptions: {
+    lower: true
+  }
 };

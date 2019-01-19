@@ -1,9 +1,28 @@
 import fs from "fs";
-import URL from "url";
-import { kebabCase, lowerCase } from "lodash";
-import defaultOptions from "./defaults";
+import slugify from "slug";
 
-// eslint-disable-next-line import/prefer-default-export
+import defaultOptions from "./defaults";
+import { pathify } from "./internals";
+
+export const onCreateNode = ({ node, actions }, pluginOptions) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === `MarkdownRemark`) {
+    const { slugOptions } = {
+      ...defaultOptions,
+      ...pluginOptions
+    };
+    const {
+      frontmatter: { category }
+    } = node;
+
+    createNodeField({
+      node,
+      name: "category",
+      value: slugify(category, { ...slugOptions })
+    });
+  }
+};
+
 export const createPages = async (
   { graphql, actions, reporter },
   pluginOptions
@@ -15,7 +34,7 @@ export const createPages = async (
   };
 
   const data = await graphql(query);
-  const posts = transformer(data);
+  const pages = transformer(data);
 
   if (!templatePath) {
     reporter.panic(`
@@ -32,15 +51,15 @@ export const createPages = async (
 
   const categorySet = new Set();
 
-  posts.forEach(({ frontmatter: { category } }) => {
+  pages.forEach(({ fields: { category } }) => {
     if (category) {
-      categorySet.add(lowerCase(category));
+      categorySet.add(category);
     }
   });
 
   categorySet.forEach(category => {
     createPage({
-      path: URL.resolve(prefix, kebabCase(category)),
+      path: pathify(prefix, category),
       component: templatePath,
       context: {
         category

@@ -58,13 +58,14 @@ export const pageQuery = graphql`
   query CategoryPage($category: String) {
     allMarkdownRemark(
       limit: 1000
-      filter: { frontmatter: { category: { eq: $category } } }
+      filter: { fields: { category: { eq: $category } } }
     ) {
       totalCount
       edges {
         node {
           fields {
             slug
+            category
           }
           excerpt
           timeToRead
@@ -82,4 +83,4 @@ export const pageQuery = graphql`
 
 ### Options
 
-You can view the defaults in [`defaults.js`](https://github.com/r,cfadzean/gatsby-pantry/blob/master/packages/gatsby-plugin-categories/src/defaults.js)
+You can view the defaults in [`defaults.js`](https://github.com/rmcfadzean/gatsby-pantry/blob/master/packages/gatsby-plugin-categories/src/defaults.js)
