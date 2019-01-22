@@ -39,13 +39,13 @@ import { graphql } from "gatsby";
 import Layout from "../layout";
 import PostListing from "../components/PostListing";
 
-export default class TagTemplate extends React.Component {
+export default class CategoryTemplate extends React.Component {
   render() {
     const { pageContext, data } = this.props;
     const { category } = pageContext;
     return (
       <Layout>
-        <div className="tag-container">
+        <div className="category-container">
           <Helmet title={`Posts in category "${category}"`} />
           <PostListing postEdges={data.allMarkdownRemark.edges} />
         </div>
