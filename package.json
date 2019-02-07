@@ -19,7 +19,7 @@
     "prettier": "^1.15.3"
   },
   "scripts": {
-    "publish": "lerna publish",
+    "release": "lerna publish",
     "watch": "lerna run watch --no-sort --stream --concurrency 999",
     "lerna:prepare": "lerna run prepare",
     "lint:js": "eslint --ext .js packages/**/src",
