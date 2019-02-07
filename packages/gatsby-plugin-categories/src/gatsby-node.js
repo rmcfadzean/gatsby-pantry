@@ -51,9 +51,9 @@ export const createPages = async (
 
   const categorySet = new Set();
 
-  pages.forEach(({ fields: { category } }) => {
-    if (category) {
-      categorySet.add(category);
+  pages.forEach(({ fields }) => {
+    if (fields && fields.category) {
+      categorySet.add(fields.category);
     }
   });
 
