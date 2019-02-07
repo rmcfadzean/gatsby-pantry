@@ -50,9 +50,9 @@ export const createPages = async (
 
   const tagSet = new Set();
 
-  pages.forEach(({ fields: { tags } }) => {
-    if (tags) {
-      tags.forEach(tag => tagSet.add(tag));
+  pages.forEach(({ fields }) => {
+    if (fields && fields.tag) {
+      fields.tags.forEach(tag => tagSet.add(tag));
     }
   });
 
