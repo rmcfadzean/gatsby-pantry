@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/rmcfadzean/gatsby-pantry/compare/v2.0.0...v2.1.0) (2019-02-07)
+
+
+### Bug Fixes
+
+* Don't crash when some .md files dont have tags either. ([070e03d](https://github.com/rmcfadzean/gatsby-pantry/commit/070e03d))
+* removed an accidentally commited directory ([6ec69ca](https://github.com/rmcfadzean/gatsby-pantry/commit/6ec69ca))
+* Update createPages to work when some .md files don't have category set. ([#8](https://github.com/rmcfadzean/gatsby-pantry/issues/8)) ([52724ac](https://github.com/rmcfadzean/gatsby-pantry/commit/52724ac))
+
+
+
+
+
 # [2.0.0](https://github.com/rmcfadzean/gatsby-pantry/compare/v1.2.0...v2.0.0) (2019-01-19)
 
 

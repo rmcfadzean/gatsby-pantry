@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories/compare/v2.0.0...v2.1.0) (2019-02-07)
+
+
+### Bug Fixes
+
+* Update createPages to work when some .md files don't have category set. ([#8](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories/issues/8)) ([52724ac](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories/commit/52724ac))
+
+
+
+
+
 # [2.0.0](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories/compare/v1.2.0...v2.0.0) (2019-01-19)
 
 
