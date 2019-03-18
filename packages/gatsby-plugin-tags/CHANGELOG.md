@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-tags/compare/v2.1.0...v2.2.0) (2019-03-18)
+
+
+### Bug Fixes
+
+* removed githead ([9dde763](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-tags/commit/9dde763))
+* tidying up ([48a3195](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-tags/commit/48a3195))
+
+
+
+
+
 # [2.1.0](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-tags/compare/v2.0.0...v2.1.0) (2019-02-07)
 
 
