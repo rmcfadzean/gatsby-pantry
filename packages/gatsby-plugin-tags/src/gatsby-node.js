@@ -15,6 +15,8 @@ export const onCreateNode = ({ node, actions }, pluginOptions) => {
       frontmatter: { tags }
     } = node;
 
+    if (!tags) return;
+
     createNodeField({
       node,
       name: "tags",

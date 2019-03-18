@@ -15,7 +15,9 @@ export const onCreateNode = ({ node, actions }, pluginOptions) => {
       frontmatter: { category }
     } = node;
 
-    category && createNodeField({
+    if (!category) return;
+
+    createNodeField({
       node,
       name: "category",
       value: slugify(category, { ...slugOptions })

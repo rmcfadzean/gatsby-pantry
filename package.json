@@ -1,22 +1,25 @@
 {
+  "name": "gatsby-pantry",
   "private": true,
   "devDependencies": {
     "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^24.5.0",
     "cross-env": "^5.2.0",
-    "eslint": "^5.12.1",
+    "eslint": "^5.15.3",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^3.5.0",
-    "eslint-plugin-import": "^2.14.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "jest": "^23.6.0",
-    "lerna": "^3.10.6",
-    "plop": "^2.2.0",
-    "prettier": "^1.15.3"
+    "husky": "^1.3.1",
+    "jest": "^24.5.0",
+    "lerna": "^3.11.0",
+    "lint-staged": "^8.0.4",
+    "plop": "^2.3.0",
+    "prettier": "^1.16.4"
   },
   "scripts": {
     "release": "lerna publish",
@@ -26,9 +29,15 @@
     "format:js": "prettier packages/**/src/* --write",
     "plop": "plop"
   },
-  "name": "gatsby-pantry",
-  "dependencies": {
-    "gatsby-plugin-categories": "file:packages/gatsby-plugin-categories",
-    "gatsby-plugin-tags": "file:packages/gatsby-plugin-tags"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "yarn run lint:js",
+      "git add"
+    ]
   }
 }
