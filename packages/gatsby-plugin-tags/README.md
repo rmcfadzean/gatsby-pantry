@@ -8,7 +8,7 @@ Gatsby plugin to automatically create index pages for tagged content
 
 ## How to use
 
-See [the example](https://github.com/rmcfadzean/gatsby-pantry/examples/starter-blog#readme)
+See [the example](https://github.com/rmcfadzean/gatsby-pantry/tree/master/examples/starter-blog#readme)
 
 ### Options
 

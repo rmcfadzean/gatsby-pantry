@@ -33,7 +33,7 @@
   "devDependencies": {
     "prettier": "^1.16.4"
   },
-  "homepage": "https://github.com/rmcfadzean/gatsby-pantry/examples/starter-blog#readme",
+  "homepage": "https://github.com/rmcfadzean/gatsby-pantry/tree/master/examples/starter-blog#readme",
   "keywords": [
     "gatsby"
   ],
