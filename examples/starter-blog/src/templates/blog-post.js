@@ -46,12 +46,22 @@ const BlogPostTemplate = ({ location, data, pageContext }) => {
 
           <Col md={4}>
             {post.fields.category && (
-              <Card className="card my-4">
+              <Card className="my-4">
                 <Card.Header>Filed Under</Card.Header>
                 <Card.Body>
                   <Link to={`/category/${post.fields.category}`}>
                     {post.fields.category}
                   </Link>
+                </Card.Body>
+              </Card>
+            )}
+            {post.fields.tags && (
+              <Card className="my-4">
+                <Card.Header>Tags</Card.Header>
+                <Card.Body>
+                  {post.fields.tags.map(tag => (
+                    <Link to={`/tag/${tag}`}>{tag}</Link>
+                  ))}
                 </Card.Body>
               </Card>
             )}
@@ -105,6 +115,7 @@ export const pageQuery = graphql`
       }
       fields {
         category
+        tags
       }
     }
   }
