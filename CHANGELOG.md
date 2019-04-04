@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/rmcfadzean/gatsby-pantry/compare/v2.2.0...v2.3.0) (2019-04-04)
+
+
+### Bug Fixes
+
+* building tags should work again... oops ([6e6c97e](https://github.com/rmcfadzean/gatsby-pantry/commit/6e6c97e))
+* **examples:** content insecure warnings ([cdf845b](https://github.com/rmcfadzean/gatsby-pantry/commit/cdf845b))
+
+
+
+
+
 # [2.2.0](https://github.com/rmcfadzean/gatsby-pantry/compare/v2.1.0...v2.2.0) (2019-03-18)
 
 

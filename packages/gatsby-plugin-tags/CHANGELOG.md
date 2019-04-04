@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-tags/compare/v2.2.0...v2.3.0) (2019-04-04)
+
+
+### Bug Fixes
+
+* building tags should work again... oops ([6e6c97e](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-tags/commit/6e6c97e))
+
+
+
+
+
 # [2.2.0](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-tags/compare/v2.1.0...v2.2.0) (2019-03-18)
 
 
