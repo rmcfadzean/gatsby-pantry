@@ -22,11 +22,6 @@ const BlogPostTemplate = ({ location, data, pageContext }) => {
             <article>
               <h1 className="mt-4">{post.frontmatter.title}</h1>
 
-              <p className="lead">
-                by
-                <a href="#">Start Bootstrap</a>
-              </p>
-
               <hr />
               <p>Posted on {post.frontmatter.date}</p>
 
@@ -60,7 +55,12 @@ const BlogPostTemplate = ({ location, data, pageContext }) => {
                 <Card.Header>Tags</Card.Header>
                 <Card.Body>
                   {post.fields.tags.map(tag => (
-                    <Link to={`/tag/${tag}`}>{tag}</Link>
+                    <Link
+                      to={`/tags/${tag}`}
+                      className="badge badge-primary p-2 m-1"
+                    >
+                      {tag}
+                    </Link>
                   ))}
                 </Card.Body>
               </Card>

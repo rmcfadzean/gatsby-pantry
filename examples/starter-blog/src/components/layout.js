@@ -1,38 +1,27 @@
 import React from "react"
+import { Nav, Container } from "react-bootstrap"
 import { Link } from "gatsby"
+import Footer from "./Footer"
 import "../assets/stylesheets/style.scss"
 
-class Layout extends React.Component {
-  render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
-
-    if (location.pathname === rootPath) {
-      header = (
-        <h1>
-          <Link to={`/`}>{title}</Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3>
-          <Link to={`/`}>{title}</Link>
-        </h3>
-      )
-    }
-    return (
-      <div>
-        <header>{header}</header>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    )
-  }
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <header>
+        <Container>
+          <Nav>
+            <Nav.Item>
+              <Nav.Link to="/" as={Link}>
+                Home
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Container>
+      </header>
+      <main>{children}</main>
+      <Footer />
+    </div>
+  )
 }
 
 export default Layout

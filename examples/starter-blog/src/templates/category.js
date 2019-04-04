@@ -1,7 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Container } from "react-bootstrap"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import PostsList from "../components/PostsList"
 
 const CategoryTemplate = ({ location, pageContext, data }) => {
   const { category } = pageContext
@@ -9,8 +12,11 @@ const CategoryTemplate = ({ location, pageContext, data }) => {
     <Layout location={location} title={`Posts in category "${category}"`}>
       <div className="category-container">
         <SEO title={`Posts in category "${category}"`} />
-        {category}
-        {/* <PostListing postEdges={data.allMarkdownRemark.edges} /> */}
+
+        <Container>
+          <h1>Category: {category}</h1>
+          <PostsList postEdges={data.allMarkdownRemark.edges} />
+        </Container>
       </div>
     </Layout>
   )
