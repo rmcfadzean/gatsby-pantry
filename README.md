@@ -21,6 +21,7 @@
 
 * [gatsby-plugin-tags](/packages/gatsby-plugin-tags/)
 * [gatsby-plugin-categories](/packages/gatsby-plugin-categories/)
+* [an example blog using the above plugins](/examples/starter-blog/)
 
 ## Contributing
 

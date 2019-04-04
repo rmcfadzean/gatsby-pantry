@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A starter blog demonstrating https://github.com/rmcfadzean/gatsby-pantry",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Rob McFadzean <rob@northxsouth.co>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -33,16 +33,12 @@
   "devDependencies": {
     "prettier": "^1.16.4"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/rmcfadzean/gatsby-pantry/examples/starter-blog#readme",
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
   "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
