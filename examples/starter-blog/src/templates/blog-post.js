@@ -29,7 +29,7 @@ const BlogPostTemplate = ({ location, data, pageContext }) => {
 
               <img
                 className="img-fluid rounded"
-                src="http://placehold.it/900x300"
+                src="https://placehold.it/900x300"
                 alt=""
               />
 
