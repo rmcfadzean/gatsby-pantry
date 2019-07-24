@@ -2,8 +2,8 @@
   "name": "gatsby-pantry",
   "private": true,
   "devDependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.4",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
@@ -16,7 +16,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "husky": "^3.0.0",
     "jest": "^24.5.0",
-    "lerna": "^3.11.0",
+    "lerna": "^3.16.4",
     "lint-staged": "^9.2.0",
     "plop": "^2.3.0",
     "prettier": "^1.16.4"
