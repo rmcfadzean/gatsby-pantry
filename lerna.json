@@ -13,7 +13,7 @@
     "**/__tests__/**",
     "**/*.md"
   ],
-  "version": "2.3.5",
+  "version": "2.3.6",
   "npmClient": "yarn",
   "registry": "https://registry.npmjs.org/"
 }

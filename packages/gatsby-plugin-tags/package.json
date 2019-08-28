@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-tags",
   "description": "Gatsby plugin to automatically create index pages for tagged content",
-  "version": "2.3.5",
+  "version": "2.3.6",
   "author": "Rob Mcfadzean <rob@northxsouth.co>",
   "keywords": [
     "gatsby",
