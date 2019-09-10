@@ -30,7 +30,7 @@
     "url": "https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-tags"
   },
   "dependencies": {
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.15",
     "slug": "^1.1.0"
   }
 }
