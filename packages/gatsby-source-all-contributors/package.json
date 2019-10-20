@@ -1,8 +1,8 @@
 {
-  "name": "{{ name }}",
+  "name": "gatsby-source-all-contributors",
   "description": "Gatsby plugin - TODO",
   "version": "1.0.0",
-  "author": "{{{ author }}}",
+  "author": "Rob Mcfadzean <rob@northxsouth.co>",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
@@ -20,7 +20,7 @@
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "cross-env": "^5.2.0"
+    "cross-env": "^6.0.3"
   },
   "scripts": {
     "build": "babel src --out-dir .",
@@ -30,9 +30,14 @@
   "bugs": {
     "url": "https://github.com/rmcfadzean/gatsby-pantry/issues"
   },
-  "homepage": "https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/{{name}}#readme",
+  "homepage": "https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-source-all-contributors#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/{{name}}"
+    "url": "https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-source-all-contributors"
+  },
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "gatsby-node-helpers": "^0.3.0",
+    "gatsby-source-filesystem": "^2.1.33"
   }
 }
