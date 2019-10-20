@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.7](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories/compare/v2.3.6...v2.3.7) (2019-10-20)
+
+**Note:** Version bump only for package gatsby-plugin-categories
+
+
+
+
+
 ## [2.3.6](https://github.com/rmcfadzean/gatsby-pantry/tree/master/packages/gatsby-plugin-categories/compare/v2.3.5...v2.3.6) (2019-08-28)
 
 **Note:** Version bump only for package gatsby-plugin-categories

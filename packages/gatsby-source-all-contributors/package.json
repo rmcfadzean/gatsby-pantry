@@ -1,7 +1,7 @@
 {
   "name": "gatsby-source-all-contributors",
   "description": "Gatsby plugin - TODO",
-  "version": "1.0.0",
+  "version": "2.3.7",
   "author": "Rob Mcfadzean <rob@northxsouth.co>",
   "keywords": [
     "gatsby",
