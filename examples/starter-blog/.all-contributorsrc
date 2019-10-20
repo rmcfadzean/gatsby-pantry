@@ -1,0 +1,26 @@
+{
+  "projectName": "gatsby-starter-blog",
+  "projectOwner": "rmcfadzean",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": ["README.md"],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "blindingstars",
+      "name": "Stephy",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6765732?s=460&v=4",
+      "profile": "https://github.com/blindingstars",
+      "contributions": ["code", "design", "ideas", "bug"]
+    },
+    {
+      "login": "rmcfadzean",
+      "name": "Rob McFadzean",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/222057?s=460&v=4",
+      "profile": "https://github.com/blindingstars",
+      "contributions": ["code", "ideas", "bug"]
+    }
+  ],
+  "contributorsPerLine": 7
+}
