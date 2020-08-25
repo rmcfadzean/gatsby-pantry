@@ -19,7 +19,7 @@
     "lerna": "^3.16.5",
     "lint-staged": "^9.4.2",
     "plop": "^2.3.0",
-    "prettier": "^1.16.4"
+    "prettier": "^2.1.0"
   },
   "scripts": {
     "release": "lerna publish",
