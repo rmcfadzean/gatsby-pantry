@@ -1,6 +1,6 @@
 # gatsby-source-all-contributors
 
-TODO
+**DEPRECATED/UNSUPPORTED but PRs are welcome**
 
 ## Install
 

@@ -1,5 +1,7 @@
 # gatsby-plugin-categories
 
+**DEPRECATED/UNSUPPORTED but PRs are welcome**
+
 Gatsby plugin to automatically create index pages for tagged content
 
 ## Install
