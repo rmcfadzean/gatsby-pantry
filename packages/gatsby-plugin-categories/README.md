@@ -25,7 +25,7 @@ See [the example](https://github.com/rmcfadzean/gatsby-pantry/tree/master/exampl
 ### Add 3files
 
 You must add 3files.
-`src/components/PostList.js`([example](../examples/starter-blog/src/components/PostList.js)), `src/components/PostListCard.js`([example](../examples/starter-blog/src/components/PostListCard.js)), `src/templates/category.js`([example](../examples/starter-blog/src/templeates/category.js))
+`src/components/PostList.js`([example](https://github.com/rmcfadzean/gatsby-pantry/tree/master/examples/starter-blog/src/components/PostList.js)), `src/components/PostListCard.js`([example](https://github.com/rmcfadzean/gatsby-pantry/tree/master/examples/starter-blog/src/components/PostListCard.js)), `src/templates/category.js`([example](https://github.com/rmcfadzean/gatsby-pantry/tree/master/examples/starter-blog/src/templeates/category.js))
 
 If you don't use `gatsby-starter-blog`, file path may be different.
 
@@ -50,8 +50,8 @@ categories page path is `/category/yourcategory`
 
 If you want to add link in blog post, edit `blog-post.js`.
 
-1. Edit pageQuery. [example](../examples/starter-blog/src/templates/blog-post.js#117)
-2. Add Link. [example](../examples/starter-blog/src/templates/blog-post.js#47)
+1. Edit pageQuery. [example](https://github.com/rmcfadzean/gatsby-pantry/tree/master/examples/starter-blog/src/templates/blog-post.js#117)
+2. Add Link. [example](https://github.com/rmcfadzean/gatsby-pantry/tree/master/examples/starter-blog/src/templates/blog-post.js#47)
 
 ### Options
 
